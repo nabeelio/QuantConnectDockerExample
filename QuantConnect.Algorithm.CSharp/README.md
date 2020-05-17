@@ -8,16 +8,16 @@ packages so autocomplete still works.
 3. Edit the `config.json` file (your algorithm file, the API key)
 4. Compile and run with Docker:
 
-!! NOTE ABOUT THE MASTER BRANCH
-
-This clones the master branch. This makes me nervous, since it seems QuantConnect stopped tagging in 2017. 
-As of this repo, the latest commit is c82ad86. The main reason I'm locking to this is so the 
-`Algorithm.CSharp.csproj` file doesn't get out of date. If you update the master branch, just make sure 
-the csproj file is updated and your code files are added to it
-
-### Build and run:
-
 ```bash
 docker build -t quantconnect:latest .
 docker run quantconnect:latest
 ```
+
+---
+
+## NOTE ABOUT THE MASTER BRANCH
+
+This clones the master branch. This makes me nervous, since it seems QuantConnect stopped tagging in 2017. 
+As of this repo, the latest commit is `c82ad86`, which is what the container checks out. The main reason 
+I'm locking to this is so the `Algorithm.CSharp.csproj` file doesn't get out of date. If you update the 
+master branch, just make sure the csproj file is updated and your code files are added to it
