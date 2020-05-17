@@ -13,6 +13,20 @@ docker build -t quantconnect:latest .
 docker run quantconnect:latest
 ```
 
+To run with docker-compose, which mounts the `Results` directory locally, use:
+
+```
+docker-compose run backtest
+```
+
+If you're running live, use:
+
+```
+docker-compose up
+```
+
+And the container will restart itself.
+
 ---
 
 ## NOTE ABOUT THE MASTER BRANCH

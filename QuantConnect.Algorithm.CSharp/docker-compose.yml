@@ -1,0 +1,10 @@
+---
+version: '3.6'
+services:
+  backtest:
+    build:
+      context: "."
+      dockerfile: Dockerfile
+    restart: always
+    volumes:
+      - ./Results:/opt/Lean/Results
