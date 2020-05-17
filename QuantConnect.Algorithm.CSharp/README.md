@@ -4,6 +4,7 @@ How to run QuantConnect without having to download Lean and build locally. The s
 packages so autocomplete still works.
 
 1. Create your algorithm file. Make sure the namespace is `QuantConnect.Algorithm`. See `NabeelTestAlgo.cs`
+  * Restore the nuget packages in either Visual Studio or Rider, which enables auto-complete to work properly
 2. Add your cs file to the `Algorithm.CSharp.csproj` file, in the `<Compile Include="..." />` section
 3. Edit the `config.json` file (your algorithm file, the API key)
 4. Compile and run with Docker:
